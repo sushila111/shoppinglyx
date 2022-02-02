@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block banner_slider %}
+<!--banner slider-->
+<div id="carouselExampleControls" class="carousel slide"
+data-bs-ride="carousel">
+ <div class="carousel-inner">
+     <div class="carousel-item active">
+         <img src="{% static 'images/banner/b1.jpg' %}"
+         class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+         <img src="{% static 'images/banner/b2.jpg' %}"
+         class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+         <img src="{% static 'images/banner/b3.jpg' %}"
+         class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+         <img src="{% static 'images/banner/b4.jpg'%}"
+         class="d-block w-100" alt="...">
+     </div>
+     <!-- end banner slider -->
+{% endblock banner_slider %}
+
+{% block livesale %}
+<!-- live sale section -->
+<div class="container">
+    <div class="row bg-danger text-center p-5 text-white 
+    border-buttom shadow">
+    <h1> SALE IS LIVE NOW</h1>
+    <span>5% Instant Discount on Axis Bank credit and Debit card</span>
+    <small class="fw-lighter">Term and Condition Applied (for details visit Bank's official Website)</small>
+</div>
+</div>
+<!-- end live sale section -->
+{% endblock livesale %}
+
+{% block main-content %}
+<!-- 1st Product slider -->
+<div class="m-3">
+    <h2>ShoppinglyX Deals of the Day</h2>
+    <div class="owl-carousel" id="slider1">
+        <a href="{% url 'product-detail' %}"
+        class="btn"<div class="item">
+            <img src="{% static images/product/1.jpg' %}"
+            alt="" height="200px"><span class="fw-bold">Product 1</span>
+            <br><span class="fs-5">Rs. 500</span>
+        </div></a>
+        <div class="item"><img src="{% static 'images/product/2.jpg'%}"
+            alt="" height="200px><span class="fw-bold">images/product/2
+            </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/3.jpg'%}"
+                alt="" height="200px><span class="fw-bold">images/product/3
+                </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/4.jpg'%}"
+                    alt="" height="200px><span class="fw-bold">images/product/4
+                    </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/5.jpg'%}"
+                        alt="" height="200px><span class="fw-bold">images/product/5
+                        </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/6.jpg'%}"
+                            alt="" height="200px><span class="fw-bold">images/product/6
+                            </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/7.jpg'%}"
+                                alt="" height="200px><span class="fw-bold">images/product/7
+                                </span><br><span class="fs-5">Rs. 300</span></div>
+
+        <div class="item"><img src="{% static 'images/product/8.jpg'%}"
+                                    alt="" height="200px><span class="fw-bold">images/product/8
+                                    </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/9.jpg'%}"
+                                        alt="" height="200px><span class="fw-bold">images/product/9
+                                        </span><br><span class="fs-5">Rs. 300</span></div>
+        <div class="item"><img src="{% static 'images/product/10.jpg'%}"
+                                            alt="" height="200px><span class="fw-bold">images/product/10
+                                            </span><br><span class="fs-5">Rs. 300</span></div>
+
+<!--payment info section -->
+ <div class="container my-5">
+     <div class="row">
+         <div class="col-sm-3">
+             <div class="card mb-3">
+                 <div class="card-body">
+                     <img src="{% static 'images/paypal/cc.jpg' %}"
+                     alt="" srcset="" class="img-fluid">
+                 </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                        <img src="{% static images/payavail/bj.jpg' %}"
+                        alt="" srcset="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                        <img src="{% static 'images/payavail/upi.jpg'%}"
+
+                        </div>
+                    </div>
+
+   <!-- 2nd product slider -->
+   <div class="mx-3">
+       <h2>Trending Deals</h2>
+       <!--slider 2 -->
+       <div class="owl-carousel" id="slider2">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/product/1.jpg' %}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/2.jpg' %}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/3.jpg' %}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/4.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/5.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/6.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/7.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/8.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/9.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/product/10.jpg'%}"
+                class="d-block w-100" alt="...">
+            </div>
+
+        
+            <!-- end banner slider -->
+       {% endblock banner_slider %}
+
