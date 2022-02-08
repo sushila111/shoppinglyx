@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Buy Now{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+    <div class="row">
+        <h3>Welcome Sushila</h3>
+        <div class="col-sm-2 border-end">
+            <ul class="list-unstyled">
+                <li class="d-grid"><a href="{% url 'orders' %}"
+                    class="btn btn-primary">Orders</a></li>
+                </ul>
+            </div>
+            {% for op in order_placed %}
+
+            <img src="{{op.product.product_image.url}}" >
+            {% endfor %}
+<ul class="list-unstyled">
+    <li class="d-grid"><a href="{% url 'orders' %}"
+        class="btn btn-primary">Orders</a></li>
+    </ul>
+    <p> Order Status: {{op.status}}</p>
+    
+    {% if op.status == 'Accepted' %}
+
+<div class="col-sm-9 offset-sm-1">
+    <div class="row">
+        <div class="col-sm-6">Order 1</div>
+        <div class="col-sm-6">Order 2</div>
+    </div>
+</div>
+</div>
+</div>
+{% endif %}
+{% endblock  %}
